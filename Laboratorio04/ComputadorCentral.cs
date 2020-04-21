@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Laboratorio04
 {
-    public class ComputadorCentral : ICheckReboot
+    public class ComputadorCentral : IConfirmReboot
     {
 
         // Set Encendido Time 7:00AM
@@ -41,59 +41,59 @@ namespace Laboratorio04
         public void ChequeoMemoria()
         {
 
-            if (R1.ChequeoMemoria() == 4)
+            if (R1.ChequeoReinicio() == 4)
             {
                 bool X1 = true;
-                R1.CheckReboot(X1, "Recepcion"); 
+                R1.ConfirmReboot(X1, "Recepcion"); 
             }
-            else if (R1.ChequeoMemoria()!=4)
+            else if (R1.ChequeoReinicio()!=4)
             {
                 bool Y1 = false;
-                R1.CheckReboot(Y1, "Recepcion");
+                R1.ConfirmReboot(Y1, "Recepcion");
             }
-            if (A1.ChequeoMemoria() == 4)
+            if (A1.ChequeoReinicio() == 4)
             {
                 bool X2 = true;
-                A1.CheckReboot(X2,"Almacenamiento");
+                A1.ConfirmReboot(X2,"Almacenamiento");
             }
-            else if (A1.ChequeoMemoria() != 4)
+            else if (A1.ChequeoReinicio() != 4)
             {
                 bool Y2 = false;
-                A1.CheckReboot(Y2, "Almacenamiento");
+                A1.ConfirmReboot(Y2, "Almacenamiento");
             }
-            if (EN1.ChequeoMemoria() == 4)
+            if (EN1.ChequeoReinicio() == 4)
             {
                 bool X3 = true;
-                EN1.CheckReboot(X3, "Ensamblaje");
+                EN1.ConfirmReboot(X3, "Ensamblaje");
             }
-            else if (EN1.ChequeoMemoria() != 4)
+            else if (EN1.ChequeoReinicio() != 4)
             {
                 bool Y3 = false;
-                EN1.CheckReboot(Y3, "Ensamblaje");
+                EN1.ConfirmReboot(Y3, "Ensamblaje");
             }
-            if (V1.ChequeoMemoria() == 4)
+            if (V1.ChequeoReinicio() == 4)
             {
                 bool X4 = true;
-                V1.CheckReboot(X4, "Verificacion");
+                V1.ConfirmReboot(X4, "Verificacion");
             }
-            else if (V1.ChequeoMemoria() != 4)
+            else if (V1.ChequeoReinicio() != 4)
             {
                 bool Y4 = false;
-                V1.CheckReboot(Y4, "Verificacion");
+                V1.ConfirmReboot(Y4, "Verificacion");
             }
-            if (EM1.ChequeoMemoria() == 4)
+            if (EM1.ChequeoReinicio() == 4)
             {
                 bool X5 = true;
-                EM1.CheckReboot(X5, "Empaque");
+                EM1.ConfirmReboot(X5, "Empaque");
             }
-            else if (EM1.ChequeoMemoria() != 4)
+            else if (EM1.ChequeoReinicio() != 4)
             {
                 bool Y5 = false;
-                EM1.CheckReboot(Y5, "Empaque");
+                EM1.ConfirmReboot(Y5, "Empaque");
             }
         }
 
-        public void CheckReboot(bool Boolean, string name)
+        public void ConfirmReboot(bool Boolean, string name)
         {
             
         }

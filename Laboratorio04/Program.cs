@@ -12,11 +12,7 @@ namespace Laboratorio04
 
             ComputadorCentral Pc1 = new ComputadorCentral();
             Pc1.encendidoTotal();
-
-
-
             Pc1.ChequeoMemoria();
-
             Pc1.apagadoTotal();
 
             

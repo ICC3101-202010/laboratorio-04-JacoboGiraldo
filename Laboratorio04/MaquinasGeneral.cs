@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Laboratorio04
 {
-    public abstract class MaquinasGeneral : ICheckReboot
+    public abstract class MaquinasGeneral : IConfirmReboot
     {
         protected string name;
 
@@ -11,13 +11,13 @@ namespace Laboratorio04
 
 
         //Encendido
-        public void Encendido(DateTime HoraE, String name)
+        public void Encendido(DateTime HoraE, string name)
         {
             Console.WriteLine("La Maquina de "+ name +" ha sido encendida a las " + HoraE);
         }
 
         //Reinicio
-        public void CheckReboot(bool Boolean,string name)
+        public void ConfirmReboot(bool Boolean,string name)
         {
             if (Boolean == true)
             {
@@ -35,7 +35,7 @@ namespace Laboratorio04
         }
 
         //Memoria
-        public int ChequeoMemoria()
+        public int ChequeoReinicio()
         {
             Random random = new Random();
             int Cont = random.Next(0, 5);
