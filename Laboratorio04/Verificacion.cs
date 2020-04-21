@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Laboratorio04
 {
-    public class Verificacion
+    public class Verificacion : MaquinasGeneral
     {
         public Verificacion()
         {

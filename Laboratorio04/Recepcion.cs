@@ -1,10 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Laboratorio04
 {
-    public class Recepcion
+    public class Recepcion : MaquinasGeneral
     {
         public Recepcion()
         {
         }
+
+
+
+
+
+
+
+
+        
     }
 }

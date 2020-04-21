@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 
 namespace Laboratorio04
 {
@@ -6,7 +8,26 @@ namespace Laboratorio04
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+
+            ComputadorCentral Pc1 = new ComputadorCentral();
+            Pc1.encendidoTotal();
+
+
+
+            Pc1.ChequeoMemoria();
+
+            Pc1.apagadoTotal();
+
+            
+
+
+
+
         }
+
+
+
+        
     }
 }
