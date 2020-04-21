@@ -19,7 +19,7 @@ namespace Laboratorio04
         Ensamblaje EN1 = new Ensamblaje();
         Verificacion V1 = new Verificacion();
         Empaque EM1 = new Empaque();
-        
+        Trabajador Trabajador = new Trabajador("Andres Howard","17800678-9",27);
 
 
         public void encendidoTotal()
@@ -44,6 +44,7 @@ namespace Laboratorio04
             if (R1.ChequeoReinicio() == 4)
             {
                 bool X1 = true;
+                Trabajador.ConfirmReboot(X1, Trabajador.NR());
                 R1.ConfirmReboot(X1, "Recepcion"); 
             }
             else if (R1.ChequeoReinicio()!=4)
@@ -54,6 +55,7 @@ namespace Laboratorio04
             if (A1.ChequeoReinicio() == 4)
             {
                 bool X2 = true;
+                Trabajador.ConfirmReboot(X2, Trabajador.NR());
                 A1.ConfirmReboot(X2,"Almacenamiento");
             }
             else if (A1.ChequeoReinicio() != 4)
@@ -64,6 +66,7 @@ namespace Laboratorio04
             if (EN1.ChequeoReinicio() == 4)
             {
                 bool X3 = true;
+                Trabajador.ConfirmReboot(X3, Trabajador.NR());
                 EN1.ConfirmReboot(X3, "Ensamblaje");
             }
             else if (EN1.ChequeoReinicio() != 4)
@@ -74,6 +77,7 @@ namespace Laboratorio04
             if (V1.ChequeoReinicio() == 4)
             {
                 bool X4 = true;
+                Trabajador.ConfirmReboot(X4, Trabajador.NR());
                 V1.ConfirmReboot(X4, "Verificacion");
             }
             else if (V1.ChequeoReinicio() != 4)
@@ -84,6 +88,7 @@ namespace Laboratorio04
             if (EM1.ChequeoReinicio() == 4)
             {
                 bool X5 = true;
+                Trabajador.ConfirmReboot(X5, Trabajador.NR());
                 EM1.ConfirmReboot(X5, "Empaque");
             }
             else if (EM1.ChequeoReinicio() != 4)

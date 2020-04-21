@@ -40,6 +40,7 @@
     <Compile Include="Verificacion.cs" />
     <Compile Include="Empaque.cs" />
     <Compile Include="IConfirmReboot.cs" />
+    <Compile Include="Trabajador.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
