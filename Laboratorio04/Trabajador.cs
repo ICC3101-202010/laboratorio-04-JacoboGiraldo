@@ -7,11 +7,11 @@ namespace Laboratorio04
         protected string rutT;
         protected int ageT;
 
-        public Trabajador(string name, string rut, int age)
+        public Trabajador(string name, string rut)
         {
             nameT = name;
             rutT = rut;
-            ageT = age;
+            
 
         }
         public string NR()

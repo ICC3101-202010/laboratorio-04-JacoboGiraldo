@@ -19,7 +19,7 @@ namespace Laboratorio04
         Ensamblaje EN1 = new Ensamblaje();
         Verificacion V1 = new Verificacion();
         Empaque EM1 = new Empaque();
-        Trabajador Trabajador = new Trabajador("Andres Howard","17800678-9",27);
+        Trabajador Trabajador = new Trabajador("Andres Howard","17800678-9");
 
 
         public void encendidoTotal()
